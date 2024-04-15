@@ -16,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Pull the repository
+        uses: actions/checkout@v4
+      - name: Run job.py
+        run: python job.py
+
