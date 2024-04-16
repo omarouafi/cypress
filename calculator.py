@@ -1,3 +1,5 @@
+__all__ = ['average', 'get_minimum']
+
 def average(arr):
     if len(arr) == 0:
         return 0
