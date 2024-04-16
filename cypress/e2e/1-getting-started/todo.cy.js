@@ -153,7 +153,7 @@ describe("Login nowledgeable", () => {
   it("login", () => {
     cy.visit("https://nowledgeable.com/login");
     cy.get("#username").type("omarouafi12@gmail.com");
-    cy.get("#password").type("mBK7u!ZPg5ZfcCe");
+    cy.get("#password").type(Cypress.env('PASSWORD'));
     cy.get("#submit").click();
     cy.url().should("include", "/student");
   });
